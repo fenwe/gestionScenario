@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>gestionScenario-2.0-exemple1</title>
+<script src="./gestionScenario-2.0.js"></script>
+<script src="./exemple1-scenario.js"></script>
+</head>
+<body>
+<div id='test'>test</div>
+
+<script>
+//------ functions specifiques a l'exemple -----------------
+testId=document.getElementById('test');
+function addText(txt)
+  {
+	testId.innerHTML=testId.innerHTML+txt+'<br>';
+	}
+
+//------ Execution -----------------
+scenario.runAuto('scenario');
+</script>
+</body></html>
